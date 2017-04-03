@@ -5,14 +5,20 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { WelcomeComponent } from './welcome/welcome.component';
+import { routing } from './app.routing';
+import { WelcomComponent } from './welcom/welcom.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
